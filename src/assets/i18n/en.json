@@ -1,0 +1,39 @@
+{
+    "menu":{
+        "close":"Modal closed",
+        "open":"Modal opened",
+        "fra":"French",
+        "eng":"English",
+        "neer":"Dutch",
+        "chi":"Chinese",
+        "ara":"Arab",
+        "lat":"Latin",
+        "all":"German",
+        "esp":"Spanish"
+    },
+    "form":{
+        "ajout":"Add a language",
+        "choice":"Choose a language",
+        "write":"Writing level",
+        "enr":"Save",
+        "speak":"Speaking level",
+        "nbr":"Number of languages",
+        "comp":"Comprehension level"
+    },
+    "write":{
+        "first":"beginner",
+        "second":"Intermediate",
+        "third":"Professional",
+        "fourth":"Excellent"
+    },
+    "speak":{
+        "first":"beginner",
+        "second":"Courant",
+        "third":"Professional"
+    },
+    "comp":{
+        "first":"beginner",
+        "second":"Normal",
+        "third":"Professional"
+    }
+}

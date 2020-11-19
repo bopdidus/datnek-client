@@ -1,0 +1,39 @@
+{
+    "menu":{
+        "close":"Modaal gesloten",
+        "open":"Modaal geopend",
+        "fra":"Frans",
+        "eng":"Engels",
+        "neer":"Nederlands",
+        "chi":"Chinese",
+        "ara":"Arabier",
+        "lat":"Latijns",
+        "all":"Duitse",
+        "esp":"Spaans"
+    },
+    "form":{
+        "ajout":"Voeg een taal toe",
+        "choice":"Kies een taal",
+        "write":"Schrijfniveau",
+        "enr":"Opslaan",
+        "speak":"Spreekniveau",
+        "nbr":"Aantal talen",
+        "comp":"Begripniveau"
+    },
+    "write":{
+        "first":"beginner",
+        "second":"Gemiddeld",
+        "third":"Professioneel",
+        "fourth":"Uitstekend"
+    },
+    "speak":{
+        "first":"beginner",
+        "second":"Courant",
+        "third":"Professioneel"
+    },
+    "comp":{
+        "first":"beginner",
+        "second":"Normal",
+        "third":"Professioneel"
+    }
+}

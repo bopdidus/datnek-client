@@ -1,0 +1,39 @@
+{
+    "menu":{
+        "close":"Modal Fermé",
+        "open":"Modal ouvert",
+        "fra":"Français",
+        "eng":"Anglais",
+        "neer":"Néerlandais",
+        "chi":"Chinois",
+        "ara":"Arabe",
+        "lat":"Latin",
+        "all":"Allemand",
+        "esp":"Espagnol"
+    },
+    "form":{
+        "ajout":"Ajouter un langue",
+        "choice":"Choisir une langue",
+        "write":"Niveau écrit",
+        "enr":"Enregistrer",
+        "speak":"Niveau parlé",
+        "nbr":"Nombres de langue",
+        "comp":"Niveau compréhension"
+    },
+    "write":{
+        "first":"debutant",
+        "second":"Intermediaire",
+        "third":"Professionel",
+        "fourth":"Excellent"
+    },
+    "speak":{
+        "first":"debutant",
+        "second":"Courant",
+        "third":"Professionel"
+    },
+    "comp":{
+        "first":"debutant",
+        "second":"Normal",
+        "third":"Professionel"
+    }
+}
