@@ -26,7 +26,7 @@
                                 <option value="{{'speak.third' | translate}}">{{'speak.third' | translate}}</option>
                             </select>
                         </div>
-                        
+
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -47,16 +47,16 @@
                             </select>
                         </div>
                     </div>
-                   
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <!--we notice that the color of button is different. this is due to the material theme that I used-->
                             <button type="submit"  mat-raised-button color="primary">{{'form.enr' | translate}}</button>
                         </div>
                     </div>
-                
+
             </form>
-            
+
         </div>
         <div class="col-lg-4">
             <br>
@@ -66,27 +66,27 @@
             </mat-card>
         </div>
     </div>
-    
+
     <div class="divider"></div>
-   
-    <div class="row mat-elevation-z8 list">
+
+    <div class="row mat-elevation-z8 list" *ngFor="let item of langs">
         <div class="col-lg-12">
-            <div class="row ">
-                <div class="col-4 col-md-1 list-item">
-                        English
+            <div class="row">
+                <div class="col-4 col-md-1 row-item">
+                        {{item.name}}
                 </div>
-                <div class="col-8 col-md-2 list-item">
-                       <strong>{{'form.speak' | translate}}</strong>  : Courant
+                <div class="col-8 col-md-2 column-item">
+                       <strong>{{'form.speak' | translate}}</strong>  : {{item.speak}}
                 </div>
-                <div class="col-10 col-md-3 list-item">
-                       <strong>{{'form.write' | translate}}</strong>  : Intermediaire
+                <div class="col-10 col-md-3 column-item">
+                       <strong>{{'form.write' | translate}}</strong>  : {{item.write}}
                 </div>
-                <div class="col-10 col-md-3 list-item">
-                     <strong>{{'form.comp' | translate}}</strong>    : Normal
+                <div class="col-10 col-md-3 column-item">
+                     <strong>{{'form.comp' | translate}}</strong>    : {{item.comp}}
                 </div>
-                <div class="col-4 col-md-1 list-item"><button mat-flat-button color="primary" (click)="openDialog()">Detail</button></div>
-                <div class="col-4 col-md-1 list-item"><button mat-flat-button color="accent">Modifier</button></div>
-                <div class="col-4 col-md-1 list-item"> <button mat-flat-button color="warn">Delete</button></div>
+                <div class="col-4 col-md-1 column-item"><button mat-flat-button color="primary" (click)="openDialog()">Detail</button></div>
+                <div class="col-4 col-md-1 column-item"><button mat-flat-button color="accent">Modifier</button></div>
+                <div class="col-4 col-md-1 column-item"> <button mat-flat-button color="warn">Delete</button></div>
             </div>
         </div>
     </div>

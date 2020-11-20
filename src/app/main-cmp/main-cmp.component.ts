@@ -34,13 +34,12 @@ export class MainCmpComponent implements OnInit {
     this.dataService.sendGetRequest().subscribe((data: any)=>{
       console.log(data);
       this.langs = data;
+      this.taille = this.langs.length;
+
     });
-    this.taille = this.langs.length;
+
   }
 
-  stateDialof(value: boolean) {
-    
-  }
 
   openDialog(): void {
     this.newDialogEvent.emit(true);
@@ -52,19 +51,22 @@ export class MainCmpComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
       this.newDialogEvent.emit(false);
-      //this.animal = result;
+
     });
   }
 
   onSubmit(frm){
     // we create the json boject before sending
-  
-    let obj = JSON.parse('{"name": "'+frm.choice+'","speakingLevel": "'+ frm.speak+'","writingLevel":"'+ frm.write +'", "comprehension":"'+ frm.comp+'"}');
 
+    let obj = JSON.parse('{"name": "'+frm.choice+'","speak": "'+ frm.speak+'","write":"'+ frm.write +'", "comp":"'+ frm.comp+'"}');
     this.dataService.addLanguage(obj).subscribe((data: any)=>{
       console.log(data);
       this.langs = data;
-    })
+      alert("Save done!")
+    });
+
+    this.formLang.reset();
+
   }
 }
 

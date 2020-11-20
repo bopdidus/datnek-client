@@ -7,8 +7,7 @@ import { HttpHeaders } from '@angular/common/http';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type':  'application/xml',
-    'Authorization': 'jwt-token'
+    'Content-Type':  'application/json',
   })
 };
 @Injectable({
@@ -16,9 +15,9 @@ const httpOptions = {
 })
 export class DataService {
 
-  private REST_API_SERVER = "http://localhost:3000/languages";
+  private REST_API_SERVER = "http://localhost:3000/api/languages";
 
- 
+
 
   constructor(private httpClient: HttpClient) { }
 
